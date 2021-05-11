@@ -39,11 +39,11 @@
 
 
 
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/linearlayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/linearlayout4"
+            android:layout_marginBottom="20dp"
             android:layout_below="@id/linearlayout1"
             android:orientation="vertical">
 
@@ -56,7 +56,7 @@
                 android:layout_marginTop="4dp"
                 android:text="Description"/>
 
-        </RelativeLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/linearlayout4"
