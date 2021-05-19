@@ -5,13 +5,24 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.newsapp.Fragements.FullNewsFragment;
 import com.example.newsapp.Fragements.TopHeadlineFragement;
 
 public class FragementAdapter extends FragmentPagerAdapter {
+    private TopHeadlineFragement topHeadlineFragement;
+    private FullNewsFragment fullNewsFragment;
+  
+    
     public FragementAdapter(FragmentManager fm) {
         super(fm);
+
+            topHeadlineFragement = new TopHeadlineFragement();
+
+
+            fullNewsFragment = new FullNewsFragment();
+
     }
 
 
@@ -21,11 +32,11 @@ public class FragementAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new TopHeadlineFragement();
+                return topHeadlineFragement;
             case 1:
-                return new FullNewsFragment();
+                return fullNewsFragment;
             default:
-                return new TopHeadlineFragement();
+                return topHeadlineFragement;
         }
     }
 

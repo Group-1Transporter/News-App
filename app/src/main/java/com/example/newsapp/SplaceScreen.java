@@ -20,6 +20,7 @@ public class SplaceScreen extends AppCompatActivity {
         binding = ActivitySplaceScreenBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         getSupportActionBar().hide();
+        //network check code is avalable or not
         if (!NetworkUtility.checkInternetConnection(this)) {
             //Toast.makeText(this, "Please enable internet connection", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(SplaceScreen.this, NoInternetActivity.class);
