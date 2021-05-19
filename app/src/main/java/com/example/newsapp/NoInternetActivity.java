@@ -30,6 +30,7 @@ public class NoInternetActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         binding.tvRetry.setOnClickListener(view -> {
+            //they check newtwok on the click of retry button
             if (!NetworkUtility.checkInternetConnection(this)) {
                 Toast.makeText(NoInternetActivity.this, "Retry", Toast.LENGTH_SHORT).show();
             } else {

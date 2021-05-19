@@ -1,8 +1,19 @@
 package com.example.newsapp.Bean;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class ArticlesBean {
     private SourceBean source;
-    private String author,title,description,url,content,urlToImage,publishedAt;
+    private String author;
+    private String title;
+    private String description;
+    private String url;
+    private String content ;
+    @SerializedName("urlToImage")
+    private String urlToImage;
+    @SerializedName("publishedAt")
+    private String publishedAt;
 
     public SourceBean getSource() {
         return source;

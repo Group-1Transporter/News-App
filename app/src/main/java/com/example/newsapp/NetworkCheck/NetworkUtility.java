@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Toast;
 
 public class NetworkUtility  {
+    //Network utilty code
     public static boolean checkInternetConnection(Context context){
         boolean connection=false;
         ConnectivityManager cm=(ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);
